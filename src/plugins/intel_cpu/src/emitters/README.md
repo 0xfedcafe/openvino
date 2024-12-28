@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Emitter defines an interface for classes repsonsible for code emission. Emitters are designed to implement device specific Instruction Set Architecture (ISA) that might be used as common functions for complex primitives or building blocks for a tensor compiler.
+Emitter defines an interface for classes responsible for code emission. Emitters are designed to implement device specific Instruction Set Architecture (ISA) that might be used as common functions for complex primitives or building blocks for a tensor compiler.
 Just-in-time (JIT) emitters is a type of emitter designed for just-in-time code generation. JIT emitters architecture involves the following basic principles:
  * Input and output arguments might be passed via register file, stack or immediates.
  * Callee (JIT Emitter) is required to preserve registers state which are out of arguments list, caller (e.g. JIT Kernel) is required to generate correct emitter call in accordance with its custom ABI.
